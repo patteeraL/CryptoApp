@@ -34,9 +34,9 @@ public class CoinAdapter extends RecyclerView.Adapter<CoinAdapter.CoinViewHolder
     @Override
     public void onBindViewHolder(@NonNull CoinViewHolder holder, int position) {
         Coin coin = coinList.get(position);
-        //holder.icon.setImageURL(coin.getIconUrl());
         holder.title.setText(coin.getSymbol());
         holder.name.setText(coin.getName());
+        holder.price.setText(coin.getPrice());
 
         // Load the image using Glide
         Glide.with(context)
@@ -56,7 +56,7 @@ public class CoinAdapter extends RecyclerView.Adapter<CoinAdapter.CoinViewHolder
 
     public static class CoinViewHolder extends RecyclerView.ViewHolder {
         ImageView icon;
-        TextView title, name;
+        TextView title, name, price;
 
         public CoinViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -64,6 +64,7 @@ public class CoinAdapter extends RecyclerView.Adapter<CoinAdapter.CoinViewHolder
             icon = itemView.findViewById(R.id.coinIcon);
             title = itemView.findViewById(R.id.coinSymbol);
             name = itemView.findViewById(R.id.coinName);
+            price = itemView.findViewById(R.id.coinPrice);
 
         }
     }
