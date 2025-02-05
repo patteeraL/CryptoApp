@@ -15,6 +15,6 @@ Internet connection to fetch cryptocurrency data.
 Upon launching the app, the main screen will display a list of cryptocurrencies with their current prices.
 
 ## API
-CryptoApp uses the CoinRanking API to fetch the latest cryptocurrency data. You can find more information about the API at CoinRanking API Documentation.
+CryptoApp uses the CoinRanking API to fetch the latest cryptocurrency data. You can find more information about the API and get your API key at [CoinRanking API Documentation](https://developers.coinranking.com/api/documentation).
 
 Good Luck!
