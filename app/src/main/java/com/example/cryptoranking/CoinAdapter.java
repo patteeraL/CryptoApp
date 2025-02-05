@@ -36,7 +36,8 @@ public class CoinAdapter extends RecyclerView.Adapter<CoinAdapter.CoinViewHolder
         Coin coin = coinList.get(position);
         holder.title.setText(coin.getSymbol());
         holder.name.setText(coin.getName());
-        holder.price.setText(coin.getPrice());
+        float price = Float.parseFloat(coin.getPrice());
+        holder.price.setText(String.format("%.2f", price));
 
         // Load the image using Glide
         Glide.with(context)

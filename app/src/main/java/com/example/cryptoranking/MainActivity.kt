@@ -41,7 +41,7 @@ class MainActivity : ComponentActivity() {
 
         // Retrofit instance
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://api.coinranking.com/v2/") // Ensure URL ends with '/'
+            .baseUrl("https://api.coinranking.com/v2/")
             .addConverterFactory(GsonConverterFactory.create())
             .client(client)
             .build()
